@@ -5,8 +5,7 @@ import Link from 'next/link';
 const fetchTodos = async () => {
   const res = await fetch('https://jsonplaceholder.typicode.com/todos');
   const todos: Todo[] = await res.json();
-  const trimmedTodos = todos.splice(0, 10);
-  return trimmedTodos;
+  return todos;
 };
 
 const TodosList = async () => {
