@@ -13,6 +13,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
+      <head>
+        <title>Testing Next 13</title>
+      </head>
       <body>
         <Header />
         {children}
